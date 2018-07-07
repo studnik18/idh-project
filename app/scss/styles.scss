@@ -89,11 +89,11 @@ body {
 		padding: 80px 50px;
 		border: 4px dashed #92c4ce;
 	}
-	.position {
+	.slide-position {
 		font-size: 60px;
 		font-weight: 300;
 	}
-	.name {
+	.slide-name {
 		font-size: 72px;
 		font-weight: 600;
 	}
@@ -130,18 +130,16 @@ body {
 		border: none;
 		cursor: pointer;
 	}
-	.photo-1 {
-		background-image: url('../img/avatar-1.png');
-	}
 	.name {
 		color: $purple;
-		margin: 5px 0;
+		margin: 15px 0;
 	}
 	.position {
 		font-size: 14px;
 		font-weight: 300;
 		color: $blue;
 		line-height: 1.7;
+		margin-bottom: 5px;
 	}
 	.location {
 		font-size: 14px;

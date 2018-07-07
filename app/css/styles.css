@@ -68,10 +68,10 @@ body {
     margin: 0 auto;
     padding: 80px 50px;
     border: 4px dashed #92c4ce; }
-  .swiper-container .position {
+  .swiper-container .slide-position {
     font-size: 60px;
     font-weight: 300; }
-  .swiper-container .name {
+  .swiper-container .slide-name {
     font-size: 72px;
     font-weight: 600; }
 
@@ -98,16 +98,15 @@ body {
     position: relative;
     border: none;
     cursor: pointer; }
-  .avatar .photo-1 {
-    background-image: url("../img/avatar-1.png"); }
   .avatar .name {
     color: #452e76;
-    margin: 5px 0; }
+    margin: 15px 0; }
   .avatar .position {
     font-size: 14px;
     font-weight: 300;
     color: #42c3de;
-    line-height: 1.7; }
+    line-height: 1.7;
+    margin-bottom: 5px; }
   .avatar .location {
     font-size: 14px;
     font-weight: 300;
