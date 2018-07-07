@@ -1,0 +1,24 @@
+{
+  "name": "idh-project",
+  "version": "1.0.0",
+  "description": "Employees slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studnik18/idh-project.git"
+  },
+  "author": "Maciej Studniarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/studnik18/idh-project/issues"
+  },
+  "homepage": "https://github.com/studnik18/idh-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
