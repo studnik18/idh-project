@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "hoek": "^5.0.3"
   }
 }
