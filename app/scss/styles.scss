@@ -1,2 +1,174 @@
 @import 'minireset.min.css';
 
+$purple: #452e76;
+$light-blue: #48c3dc;
+$grey: #808080;
+$blue: #42c3de;
+
+* {
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+body {
+	background-image: url('../img/bg.png');
+	background-repeat: repeat;
+}
+
+%flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+%flex-column {
+	display: flex;
+	flex-direction: column;	
+}
+
+#modal {
+	opacity: 0;
+	background-image: url("../img/slider-bg.png");
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	z-index: -999;
+	height: 100%;
+	width: 100%;
+	transform: scaleX(1) scaleY(1) scaleZ(1);
+	display: flex;
+	align-items: center;
+	transform-style: preserve-3d;
+	transition: opacity 200ms, transform 200ms;
+
+	&.open {
+		opacity: 1;
+		z-index: 999;
+	}
+
+	.close-button {
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		cursor: pointer;
+	}
+}
+
+.swiper-container {
+	align-items: center;
+	height: 375px;
+	margin-top: 30%;
+	p {
+		text-align: center;
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
+		color: white;
+	}
+	.navigation {
+		width: 42px;
+		height: 71px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 10;
+		cursor: pointer;
+	}
+	.arrow-prev {
+		left: 50px;
+	}
+	.arrow-next {
+		right: 50px;
+	}
+	.swiper-slide {
+		display: flex;
+	}
+	.text-wrapper {
+		justify-content: center;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 80px 50px;
+		border: 4px dashed #92c4ce;
+	}
+	.position {
+		font-size: 60px;
+		font-weight: 300;
+	}
+	.name {
+		font-size: 72px;
+		font-weight: 600;
+	}
+}
+
+.header {
+	font-weight: 600;
+	color: $purple;
+	font-size: 60px;
+	text-align: center;
+	margin: 75px 0;
+}
+.avatars-container {
+	@extend %flex-column;
+}
+
+.avatars-row {
+	@extend %flex-row;
+	width: 80vw;
+	justify-content: space-between;
+	margin: 0 auto 60px;
+}
+
+.avatar {
+	position: relative;
+	width: 180px;
+	p {
+		text-align: center;
+	}
+	.photo {
+		width: 180px;
+		height: 180px;
+		position: relative;
+		border: none;
+		cursor: pointer;
+	}
+	.photo-1 {
+		background-image: url('../img/avatar-1.png');
+	}
+	.name {
+		color: $purple;
+		margin: 5px 0;
+	}
+	.position {
+		font-size: 14px;
+		font-weight: 300;
+		color: $blue;
+		line-height: 1.7;
+	}
+	.location {
+		font-size: 14px;
+		font-weight: 300;
+		color: $grey;
+	}
+}
+
+.mail-icon {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+	circle {
+		fill: $purple;
+	}
+	.envelope-icon {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
